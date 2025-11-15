@@ -51,7 +51,7 @@ public class Diet {
         sb.append("Carb: ").append((int)this.carb).append("g  \n");
         sb.append("Sugar: ").append((int)this.sugar).append("g  \n");
         sb.append("Protein: ").append((int)this.protein).append("g  \n"); 
-        sb.append("Salt: ").append(this.salt).append("g; Sodium: ").append(this.salt * 0.4).append("g  \n");
+        sb.append("Salt: ").append(String.format("%.2f", this.salt)).append("g; Sodium: ").append(String.format("%.2f", this.salt * 0.4)).append("g  \n");
         sb.append("Cals: ").append((int)this.cals).append("kcal  \n");
         sb.append("Price: £").append(String.format("%.2f", this.price)).append("  \n");
         sb.append(getMacroRatios());

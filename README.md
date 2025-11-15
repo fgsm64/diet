@@ -4,7 +4,7 @@ SatFat: 11g
 Carb: 108g  
 Sugar: 21g  
 Protein: 161g  
-Salt: 4.199999999999999g; Sodium: 1.6799999999999997g  
+Salt: 4.20g; Sodium: 1.68g  
 Cals: 1552kcal  
 Price: £4.93  
 F: 15%
@@ -23,7 +23,7 @@ SatFat: 26g
 Carb: 188g  
 Sugar: 21g  
 Protein: 208g  
-Salt: 9.830000000000002g; Sodium: 3.932000000000001g  
+Salt: 9.83g; Sodium: 3.93g  
 Cals: 2314kcal  
 Price: £8.98  
 F: 16%
