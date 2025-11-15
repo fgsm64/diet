@@ -44,7 +44,7 @@ public class Diet {
 
         StringBuilder sb = new StringBuilder();
 
-        sb.append(this.name).append(":  \n");
+        sb.append("# ").append(this.name).append(":  \n");
 
         sb.append("Fat: ").append((int)this.fat).append("g  \n");
         sb.append("SatFat: ").append((int)this.satFat).append("g  \n");

@@ -1,4 +1,4 @@
-Cut:  
+# Cut:  
 Fat: 23g  
 SatFat: 8g  
 Carb: 101g  
@@ -16,7 +16,7 @@ Foods:
   - TescoSpinnyRic, 300.0g, £1.55
   - TescoTomatoSauce, 250.0g, £0.38
 
-Bulk:  
+# Bulk:  
 Fat: 75g  
 SatFat: 26g  
 Carb: 188g  
