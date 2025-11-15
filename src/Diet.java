@@ -44,16 +44,16 @@ public class Diet {
 
         StringBuilder sb = new StringBuilder();
 
-        sb.append(this.name).append(":\n");
+        sb.append(this.name).append(":  \n");
 
-        sb.append("Fat: ").append((int)this.fat).append("g\n");
-        sb.append("SatFat: ").append((int)this.satFat).append("g\n");
-        sb.append("Carb: ").append((int)this.carb).append("g\n");
-        sb.append("Sugar: ").append((int)this.sugar).append("g\n");
-        sb.append("Protein: ").append((int)this.protein).append("g\n"); 
-        sb.append("Salt: ").append(this.salt).append("g; Sodium: ").append(this.salt * 0.4).append("g\n");
-        sb.append("Cals: ").append((int)this.cals).append("kcal\n");
-        sb.append("Price: £").append(String.format("%.2f", this.price)).append("\n");
+        sb.append("Fat: ").append((int)this.fat).append("g  \n");
+        sb.append("SatFat: ").append((int)this.satFat).append("g  \n");
+        sb.append("Carb: ").append((int)this.carb).append("g  \n");
+        sb.append("Sugar: ").append((int)this.sugar).append("g  \n");
+        sb.append("Protein: ").append((int)this.protein).append("g  \n"); 
+        sb.append("Salt: ").append(this.salt).append("g; Sodium: ").append(this.salt * 0.4).append("g  \n");
+        sb.append("Cals: ").append((int)this.cals).append("kcal  \n");
+        sb.append("Price: £").append(String.format("%.2f", this.price)).append("  \n");
         sb.append(getMacroRatios());
 
         sb.append("\nFoods:\n");
