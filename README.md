@@ -1,20 +1,21 @@
 # Cut:  
-Fat: 23g  
-SatFat: 8g  
-Carb: 101g  
-Sugar: 17g  
-Protein: 149g  
-Salt: 3.8499999999999996g; Sodium: 1.54g  
-Cals: 1240kcal  
+Fat: 48g  
+SatFat: 11g  
+Carb: 108g  
+Sugar: 21g  
+Protein: 161g  
+Salt: 4.199999999999999g; Sodium: 1.6799999999999997g  
+Cals: 1552kcal  
 Price: £4.93  
-F: 8%
-C: 37%
-P: 54%
+F: 15%
+C: 34%
+P: 50%
 
 Foods:
   - SainsChickenBreast, 400.0g, £3.0
   - TescoSpinnyRic, 300.0g, £1.55
   - TescoTomatoSauce, 250.0g, £0.38
+  - SainsPeanutButter, 50.0g, £0.0
 
 # Bulk:  
 Fat: 75g  

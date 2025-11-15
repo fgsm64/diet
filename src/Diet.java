@@ -71,30 +71,29 @@ public class Diet {
         listOfFoodsBulk.add(new TescoTomatoSauce(250, 0.38));
         Diet dietBulk = new Diet("Bulk", listOfFoodsBulk);
 
-        List<Food> listOfFoodsTest = new ArrayList<Food>();
-        listOfFoodsTest.add(new SainsChickenThigh(640, 5.5));
-        listOfFoodsTest.add(new SainsSpinnyRic(600, 3.10));
-        listOfFoodsTest.add(new SainsTomatoSauce(250, 0.38));
-        Diet dietTest = new Diet("Test", listOfFoodsTest);
-
         List<Food> listOfFoodsCut = new ArrayList<Food>();
         listOfFoodsCut.add(new SainsChickenBreast(400, 3));
-        //listOfFoodsCut.add(new SainsPeanutButter(100, 0.60));
         listOfFoodsCut.add(new TescoSpinnyRic(300, 1.55));
         listOfFoodsCut.add(new TescoTomatoSauce(250, 0.38));
+        listOfFoodsCut.add(new SainsPeanutButter(50, 0));
         Diet dietCut = new Diet("Cut", listOfFoodsCut);
-
+        
         List<Food> listOfFoodsCheat = new ArrayList<Food>();
         listOfFoodsCheat.add(new TescoSpinnyRic(300, 1.55));
         listOfFoodsCheat.add(new TescoTomatoSauce(125, 0.38));
         listOfFoodsCheat.add(new DQP(5));
         listOfFoodsCheat.add(new DQP(5));
         Diet dietCheat = new Diet("Cheat", listOfFoodsCheat);
+        
+        List<Food> listOfFoodsTest = new ArrayList<Food>();
+        listOfFoodsTest.add(new SainsChickenThigh(640, 5.5));
+        listOfFoodsTest.add(new TescoSourdough(400, 2.10));
+        Diet dietTest = new Diet("Test", listOfFoodsTest);
+
 
         System.out.println(dietBulk);
         System.out.println(dietTest);
-        //System.out.println(dietCut);
-        //System.out.println(dietCut);
+        System.out.println(dietCut);
         //System.out.println(dietCheat);
 
         try {
