@@ -66,9 +66,10 @@ public class Diet {
     
     public static void main(String[] args) {
         List<Food> listOfFoodsBulk = new ArrayList<Food>();
-        listOfFoodsBulk.add(new SainsChickenThigh(640, 5.5));
-        listOfFoodsBulk.add(new TescoSpinnyRic(600, 3.10));
-        listOfFoodsBulk.add(new TescoTomatoSauce(250, 0.38));
+        listOfFoodsBulk.add(new SainsChickenThigh(640, 5.95));
+        listOfFoodsBulk.add(new TescoSpinnyRic(300, 1.55));
+        listOfFoodsBulk.add(new TescoTomatoSauce(125, 0.17));
+        listOfFoodsBulk.add(new TescoSourdough(200, 1.05));
         Diet dietBulk = new Diet("Bulk", listOfFoodsBulk);
 
         List<Food> listOfFoodsCut = new ArrayList<Food>();
