@@ -43,7 +43,7 @@ public abstract class Food {
     }
 
     public String toString() {
-        return getClass().getSimpleName() + ", " + mass + "g, £" + price;
+        return getClass().getSimpleName() + ", " + (String.format("%.0f", mass)) + "g, £" + price;
     }
 
 }

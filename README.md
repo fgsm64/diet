@@ -12,10 +12,10 @@ C: 34%
 P: 50%
 
 Foods:
-  - SainsChickenBreast, 400.0g, £3.0
-  - TescoSpinnyRic, 300.0g, £1.55
-  - TescoTomatoSauce, 250.0g, £0.38
-  - SainsPeanutButter, 50.0g, £0.0
+  - SainsChickenBreast, 400g, £3.0
+  - TescoSpinnyRic, 300g, £1.55
+  - TescoTomatoSauce, 250g, £0.38
+  - SainsPeanutButter, 50g, £0.0
 
 # Bulk:  
 Fat: 64g  
@@ -31,8 +31,8 @@ C: 42%
 P: 44%
 
 Foods:
-  - SainsChickenThigh, 640.0g, £5.95
-  - TescoSpinnyRic, 300.0g, £1.55
-  - TescoTomatoSauce, 250.0g, £0.37
-  - TescoSourdough, 200.0g, £1.35
+  - SainsChickenThigh, 640g, £5.95
+  - TescoSpinnyRic, 300g, £1.55
+  - TescoTomatoSauce, 250g, £0.37
+  - TescoSourdough, 200g, £1.35
 
