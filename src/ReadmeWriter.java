@@ -29,8 +29,6 @@ public class ReadmeWriter {
 
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(readme, false))) {
         }
-
-        System.out.println("README.md cleared at: " + readme.getAbsolutePath());
     }
 
 }
