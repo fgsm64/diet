@@ -4,29 +4,29 @@ import java.util.List;
 
 public class Diet {
     
-    public String name;
-    public double fat = 0;
-    public double satFat = 0;
-    public double carb = 0;
-    public double sugar = 0;
-    public double protein = 0;
-    public double salt = 0;
-    public double cals = 0;
-    public double price = 0;
-    public List<Food> listOfFoods;
+    private String name;
+    private double fat = 0;
+    private double satFat = 0;
+    private double carb = 0;
+    private double sugar = 0;
+    private double protein = 0;
+    private double salt = 0;
+    private double cals = 0;
+    private double price = 0;
+    private List<Food> listOfFoods;
 
-    public Diet(String name,List<Food> listOfFoods) {
+    public Diet(String name, List<Food> listOfFoods) {
         this.name = name;
         this.listOfFoods = listOfFoods;
-        for ( Food food : listOfFoods ) {
-            this.fat += food.fat;
-            this.satFat += food.satFat;
-            this.carb += food.carb;
-            this.sugar += food.sugar;
-            this.protein += food.protein;
-            this.salt += food.salt;
-            this.cals += food.cals;
-            this.price += food.price;
+        for (Food food : listOfFoods) {
+            this.fat += food.getFat();
+            this.satFat += food.getSatFat();
+            this.carb += food.getCarb();
+            this.sugar += food.getSugar();
+            this.protein += food.getProtein();
+            this.salt += food.getSalt();
+            this.cals += food.getCals();
+            this.price += food.getPrice();
         }
     }
 

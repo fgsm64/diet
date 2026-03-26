@@ -76,6 +76,10 @@ public abstract class Food {
         return this.calsPer100 * (this.mass / 100);
     }
 
+    public double getPrice() {
+        return this.price;
+    }
+
     public String toString() {
         return getClass().getSimpleName() + ", " + (String.format("%.0f", mass)) + "g, £" + price;
     }
