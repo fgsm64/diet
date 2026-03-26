@@ -1,49 +1,82 @@
 public abstract class Food {
     
-    public double fat;
-    public double satFat;
-    public double carb;
-    public double sugar;
-    public double protein;
-    public double salt;
-    public double cals;
-    public double price;
-    public double mass;
-
-    protected abstract double getFatPer100Grams();
-    protected abstract double getSatFatPer100Grams();
-    protected abstract double getCarbPer100Grams();
-    protected abstract double getSugarPer100Grams();
-    protected abstract double getSaltPer100Grams();
-    protected abstract double getProteinPer100Grams();
-    protected abstract double getCalsPer100Grams();
+    private double fatPer100;
+    private double satFatPer100;
+    private double carbPer100;
+    private double sugarPer100;
+    private double proteinPer100;
+    private double saltPer100;
+    private double calsPer100;
+    private double price;
+    private double mass;
 
     public Food(double mass, double price) {
         this.mass = mass;
-        mass /= 100;
-        this.fat = getFatPer100Grams() * mass;
-        this.satFat = getSatFatPer100Grams() * mass;
-        this.carb = getCarbPer100Grams() * mass;
-        this.sugar = getSugarPer100Grams() * mass;
-        this.protein = getProteinPer100Grams() * mass;
-        this.salt = getSaltPer100Grams() * mass;
-        this.cals = getCalsPer100Grams() * mass;
         this.price = price;
     }
 
     public Food(double price) {
-        this.fat = getFatPer100Grams();
-        this.satFat = getSatFatPer100Grams();
-        this.carb = getCarbPer100Grams();
-        this.sugar = getSugarPer100Grams();
-        this.protein = getProteinPer100Grams();
-        this.salt = getSaltPer100Grams();
-        this.cals = getCalsPer100Grams();
         this.price = price;
+    }
+
+    // TO CONSIDER: make get*Per100 private? remove even?
+    public double getFatPer100Grams() {
+        return this.fatPer100;
+    }
+
+    public double getFat() {
+        return this.fatPer100 * (this.mass / 100);
+    }
+
+    public double getSatFatPer100Grams() {
+        return this.satFatPer100;
+    }
+
+    public double getSatFat() {
+        return this.satFatPer100 * (this.mass / 100);
+    }
+
+    public double getCarbPer100Grams() {
+        return this.carbPer100;
+    }
+
+    public double getCarb() {
+        return this.carbPer100 * (this.mass / 100);
+    }
+
+    public double getSugarPer100Grams() {
+        return this.sugarPer100;
+    }
+
+    public double getSugar() {
+        return this.sugarPer100 * (this.mass / 100);
+    }
+
+    public double getSaltPer100Grams() {
+        return this.saltPer100;
+    }
+
+    public double getSalt() {
+        return this.saltPer100 * (this.mass / 100);
+    }
+
+    public double getProteinPer100Grams() {
+        return this.proteinPer100;
+    }
+
+    public double getProtein() {
+        return this.proteinPer100 * (this.mass / 100);
+    }
+
+    public double getCalsPer100Grams() {
+        return this.calsPer100;
+    }
+
+    public double getCals() {
+        return this.calsPer100 * (this.mass / 100);
     }
 
     public String toString() {
         return getClass().getSimpleName() + ", " + (String.format("%.0f", mass)) + "g, £" + price;
     }
-
 }
