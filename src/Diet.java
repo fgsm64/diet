@@ -65,48 +65,12 @@ public class Diet {
     }
     
     public static void main(String[] args) {
-        List<Food> listOfFoodsBulk = new ArrayList<Food>();
-        listOfFoodsBulk.add(new SainsChickenThigh(640, 5.95));
-        listOfFoodsBulk.add(new TescoSpinnyRic(300, 1.55));
-        listOfFoodsBulk.add(new TescoTomatoSauce(250, 0.37));
-        listOfFoodsBulk.add(new TescoSourdough(200, 1.35));
-        Diet dietBulk = new Diet("Bulk", listOfFoodsBulk);
-
-        List<Food> listOfFoodsCut = new ArrayList<Food>();
-        listOfFoodsCut.add(new SainsChickenBreast(400, 3));
-        listOfFoodsCut.add(new TescoSpinnyRic(300, 1.55));
-        listOfFoodsCut.add(new TescoTomatoSauce(250, 0.38));
-        listOfFoodsCut.add(new SainsPeanutButter(50, 0));
-        Diet dietCut = new Diet("Cut", listOfFoodsCut);
-        
-        List<Food> listOfFoodsCheat = new ArrayList<Food>();
-        listOfFoodsCheat.add(new TescoSpinnyRic(300, 1.55));
-        listOfFoodsCheat.add(new TescoTomatoSauce(125, 0.38));
-        listOfFoodsCheat.add(new DQP(5));
-        listOfFoodsCheat.add(new DQP(5));
-        Diet dietCheat = new Diet("Cheat", listOfFoodsCheat);
         
         List<Food> listOfFoodsTest = new ArrayList<Food>();
-        listOfFoodsTest.add(new TescoSpinnyRic(300, 1.55));
         listOfFoodsTest.add(new SainsChickenBreast(320, 5.95));
-        listOfFoodsTest.add(new TescoTomatoSauce(250, 0.37));
-        listOfFoodsTest.add(new TescoSourdough(200, 1.35));
-        listOfFoodsTest.add(new CremeEgg());
         Diet dietTest = new Diet("Test", listOfFoodsTest);
 
-
-        System.out.println(dietBulk);
         System.out.println(dietTest);
-        System.out.println(dietCut);
-        //System.out.println(dietCheat);
-
-        try {
-            ReadmeWriter.clearReadme();
-            ReadmeWriter.writeDietToReadme(dietCut);
-            ReadmeWriter.writeDietToReadme(dietBulk);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
     }
 }
