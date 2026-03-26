@@ -10,12 +10,12 @@ public abstract class Food {
     private double price;
     private double mass;
 
-    public Food(double mass, double price) {
+    protected Food(double mass, double price) {
         this.mass = mass;
         this.price = price;
     }
 
-    public Food(double price) {
+    protected Food(double price) {
         this.price = price;
     }
 
