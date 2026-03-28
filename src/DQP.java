@@ -11,13 +11,9 @@ public class DQP extends Food {
         this.calsPer100 = 749;
     }
 
-    public DQP(double price) {
+    public DQP() {
         super(100, 0);
         initNutrition();
-    }
-
-    public DQP() {
-        this(0);
     }
 
     @Override
