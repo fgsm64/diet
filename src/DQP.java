@@ -1,42 +1,27 @@
 public class DQP extends Food {
+
     // no info for per 100g. all info is per burger
+    protected void initNutrition() {
+        this.fatPer100 = 44;
+        this.satFatPer100 = 20;
+        this.carbPer100 = 36;
+        this.sugarPer100 = 11;
+        this.proteinPer100 = 50;
+        this.saltPer100 = 2.8;
+        this.calsPer100 = 749;
+    }
+
     public DQP(double price) {
-        super(price);
+        super(100, 0);
+        initNutrition();
     }
 
-    
-    public double getFatPer100Grams() {
-        return 44;
+    public DQP() {
+        this(0);
     }
 
-    
-    public double getSatFatPer100Grams() {
-        return 20;
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() + ", " + "£" + price;
     }
-
-    
-    public double getCarbPer100Grams() {
-        return 36;
-    }
-
-    
-    public double getSugarPer100Grams() {
-        return 11;
-    }
-
-    
-    public double getProteinPer100Grams() {
-        return 50;
-    }
-
-    
-    public double getSaltPer100Grams() {
-        return 2.8;
-    }
-
-    
-    public double getCalsPer100Grams() {
-        return 749;
-    }
-
 }
