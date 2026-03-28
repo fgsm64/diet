@@ -1,42 +1,21 @@
 public class ProteinPowder extends Food {
 
+    protected void initNutrition() {
+        this.fatPer100 = 3.6;
+        this.satFatPer100 = 2.8;
+        this.carbPer100 = 28;
+        this.sugarPer100 = 21;
+        this.proteinPer100 = 59;
+        this.saltPer100 = 0.8;
+        this.calsPer100 = 376;
+    }
+
     public ProteinPowder(double mass, double price) {
         super(mass, price);
+        initNutrition();
     }
 
-    
-    public double getFatPer100Grams() {
-        return 3.6;
+    public ProteinPowder(double mass) {
+        this(mass, 0);
     }
-
-    
-    public double getSatFatPer100Grams() {
-        return 2.8;
-    }
-
-    
-    public double getCarbPer100Grams() {
-        return 28;
-    }
-
-    
-    public double getSugarPer100Grams() {
-        return 21;
-    }
-
-    
-    public double getProteinPer100Grams() {
-        return 59;
-    }
-
-    
-    public double getSaltPer100Grams() {
-        return 0.8;
-    }
-
-    
-    public double getCalsPer100Grams() {
-        return 376;
-    }
-
 }
