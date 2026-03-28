@@ -15,6 +15,8 @@ public abstract class Food {
         this.price = price;
     }
 
+    protected abstract void initNutrition();
+
     public double getFat() {
         return this.fatPer100 * (this.mass / 100);
     }

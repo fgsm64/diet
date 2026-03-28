@@ -1,6 +1,6 @@
 public class SainsChickenBreast extends Food {
 
-    private void initNutrition() {
+    protected void initNutrition() {
         this.fatPer100 = 2.2;
         this.satFatPer100 = 0.4;
         this.carbPer100 = 0;
