@@ -1,43 +1,21 @@
 public class SainsPeanutButter extends Food {
 
+    protected void initNutrition() {
+        this.fatPer100 = 50.9;
+        this.satFatPer100 = 7;
+        this.carbPer100 = 13.7;
+        this.sugarPer100 = 7;
+        this.proteinPer100 = 24.6;
+        this.saltPer100 = 0.7;
+        this.calsPer100 = 548;
+    }
+
     public SainsPeanutButter(double mass, double price) {
         super(mass, price);
+        initNutrition();
     }
 
-    
-    public double getFatPer100Grams() {
-        return 50.9;
+    public SainsPeanutButter(double mass) {
+        this(mass, 0);
     }
-
-    
-    public double getSatFatPer100Grams() {
-        return 7;
-    }
-
-    
-    public double getCarbPer100Grams() {
-        return 13.7;
-    }
-
-    
-    public double getSugarPer100Grams() {
-        return 7;
-    }
-
-    
-    public double getProteinPer100Grams() {
-        return 24.6;
-    }
-    
-    
-    public double getSaltPer100Grams() {
-        return 0.7;
-    }
-
-
-    
-    public double getCalsPer100Grams() {
-        return 624;
-    }
-
 }

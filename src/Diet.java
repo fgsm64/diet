@@ -4,29 +4,29 @@ import java.util.List;
 
 public class Diet {
     
-    public String name;
-    public double fat = 0;
-    public double satFat = 0;
-    public double carb = 0;
-    public double sugar = 0;
-    public double protein = 0;
-    public double salt = 0;
-    public double cals = 0;
-    public double price = 0;
-    public List<Food> listOfFoods;
+    private String name;
+    private double fat = 0;
+    private double satFat = 0;
+    private double carb = 0;
+    private double sugar = 0;
+    private double protein = 0;
+    private double salt = 0;
+    private double cals = 0;
+    private double price = 0;
+    private List<Food> listOfFoods;
 
-    public Diet(String name,List<Food> listOfFoods) {
+    public Diet(String name, List<Food> listOfFoods) {
         this.name = name;
         this.listOfFoods = listOfFoods;
-        for ( Food food : listOfFoods ) {
-            this.fat += food.fat;
-            this.satFat += food.satFat;
-            this.carb += food.carb;
-            this.sugar += food.sugar;
-            this.protein += food.protein;
-            this.salt += food.salt;
-            this.cals += food.cals;
-            this.price += food.price;
+        for (Food food : listOfFoods) {
+            this.fat += food.getFat();
+            this.satFat += food.getSatFat();
+            this.carb += food.getCarb();
+            this.sugar += food.getSugar();
+            this.protein += food.getProtein();
+            this.salt += food.getSalt();
+            this.cals += food.getCals();
+            this.price += food.getPrice();
         }
     }
 
@@ -66,31 +66,31 @@ public class Diet {
     
     public static void main(String[] args) {
         List<Food> listOfFoodsBulk = new ArrayList<Food>();
-        listOfFoodsBulk.add(new SainsChickenThigh(640, 5.95));
-        listOfFoodsBulk.add(new TescoSpinnyRic(300, 1.55));
-        listOfFoodsBulk.add(new TescoTomatoSauce(250, 0.37));
-        listOfFoodsBulk.add(new TescoSourdough(200, 1.35));
+        listOfFoodsBulk.add(new SainsChickenThigh(640));
+        listOfFoodsBulk.add(new TescoSpinnyRic(300));
+        listOfFoodsBulk.add(new SainsTomatoSauce(250));
+        listOfFoodsBulk.add(new TescoSourdough(200));
         Diet dietBulk = new Diet("Bulk", listOfFoodsBulk);
 
         List<Food> listOfFoodsCut = new ArrayList<Food>();
-        listOfFoodsCut.add(new SainsChickenBreast(400, 3));
-        listOfFoodsCut.add(new TescoSpinnyRic(300, 1.55));
-        listOfFoodsCut.add(new TescoTomatoSauce(250, 0.38));
-        listOfFoodsCut.add(new SainsPeanutButter(50, 0));
+        listOfFoodsCut.add(new SainsChickenBreast(400));
+        listOfFoodsCut.add(new TescoSpinnyRic(300));
+        listOfFoodsCut.add(new SainsTomatoSauce(250));
+        listOfFoodsCut.add(new SainsPeanutButter(50));
         Diet dietCut = new Diet("Cut", listOfFoodsCut);
         
         List<Food> listOfFoodsCheat = new ArrayList<Food>();
-        listOfFoodsCheat.add(new TescoSpinnyRic(300, 1.55));
-        listOfFoodsCheat.add(new TescoTomatoSauce(125, 0.38));
-        listOfFoodsCheat.add(new DQP(5));
-        listOfFoodsCheat.add(new DQP(5));
+        listOfFoodsCheat.add(new TescoSpinnyRic(300));
+        listOfFoodsCheat.add(new SainsTomatoSauce(125));
+        listOfFoodsCheat.add(new DQP());
+        listOfFoodsCheat.add(new DQP());
         Diet dietCheat = new Diet("Cheat", listOfFoodsCheat);
         
         List<Food> listOfFoodsTest = new ArrayList<Food>();
-        listOfFoodsTest.add(new TescoSpinnyRic(300, 1.55));
-        listOfFoodsTest.add(new SainsChickenBreast(320, 5.95));
-        listOfFoodsTest.add(new TescoTomatoSauce(250, 0.37));
-        listOfFoodsTest.add(new TescoSourdough(200, 1.35));
+        listOfFoodsTest.add(new TescoSpinnyRic(300));
+        listOfFoodsTest.add(new SainsChickenBreast(320));
+        listOfFoodsTest.add(new SainsTomatoSauce(250));
+        listOfFoodsTest.add(new TescoSourdough(200));
         listOfFoodsTest.add(new CremeEgg());
         Diet dietTest = new Diet("Test", listOfFoodsTest);
 
@@ -107,6 +107,5 @@ public class Diet {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 }

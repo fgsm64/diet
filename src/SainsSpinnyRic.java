@@ -1,42 +1,21 @@
 public class SainsSpinnyRic extends Food {
 
+    protected void initNutrition() {
+        this.fatPer100 = 3.3;
+        this.satFatPer100 = 1.1;
+        this.carbPer100 = 25.7;
+        this.sugarPer100 = 1.4;
+        this.proteinPer100 = 6.3;
+        this.saltPer100 = 0.35;
+        this.calsPer100 = 161;
+    }
+
     public SainsSpinnyRic(double mass, double price) {
         super(mass, price);
+        initNutrition();
     }
 
-    
-    public double getFatPer100Grams() {
-        return 3.3;
+    public SainsSpinnyRic(double mass) {
+        this(mass, 0);
     }
-
-    
-    public double getSatFatPer100Grams() {
-        return 1.1;
-    }
-
-    
-    public double getCarbPer100Grams() {
-        return 25.7;
-    }
-
-    
-    public double getSugarPer100Grams() {
-        return 1.4;
-    }
-
-    
-    public double getProteinPer100Grams() {
-        return 6.3;
-    }
-    
-    
-    public double getSaltPer100Grams() {
-        return 0.35;
-    }
-
-    
-    public double getCalsPer100Grams() {
-        return 161;
-    }
-
 }

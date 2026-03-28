@@ -1,42 +1,21 @@
 public class TescoSourdough extends Food {
 
+    protected void initNutrition() {
+        this.fatPer100 = 0.5;
+        this.satFatPer100 = 0.1;
+        this.carbPer100 = 48;
+        this.sugarPer100 = 1.5;
+        this.proteinPer100 = 10.7;
+        this.saltPer100 = 0.95;
+        this.calsPer100 = 245;
+    }
+
     public TescoSourdough(double mass, double price) {
         super(mass, price);
+        initNutrition();
     }
 
-    
-    public double getFatPer100Grams() {
-        return 0.5;
+    public TescoSourdough(double mass) {
+        this(mass, 0);
     }
-
-    
-    public double getSatFatPer100Grams() {
-        return 0.1;
-    }
-
-    
-    public double getCarbPer100Grams() {
-        return 48;
-    }
-
-    
-    public double getSugarPer100Grams() {
-        return 1.5;
-    }
-
-    
-    public double getProteinPer100Grams() {
-        return 10.7;
-    }
-    
-    
-    public double getSaltPer100Grams() {
-        return 0.95;
-    }
-
-    
-    public double getCalsPer100Grams() {
-        return 245;
-    }
-
 }

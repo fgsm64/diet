@@ -1,42 +1,21 @@
 public class TescoSpinnyRic extends Food {
 
+    protected void initNutrition() {
+        this.fatPer100 = 4.2;
+        this.satFatPer100 = 2.2;
+        this.carbPer100 = 29;
+        this.sugarPer100 = 1.2;
+        this.proteinPer100 = 7.4;
+        this.saltPer100 = 0.58;
+        this.calsPer100 = 189;
+    }
+
     public TescoSpinnyRic(double mass, double price) {
         super(mass, price);
+        initNutrition();
     }
 
-    
-    public double getFatPer100Grams() {
-        return 4.2;
+    public TescoSpinnyRic(double mass) {
+        this(mass, 0);
     }
-
-    
-    public double getSatFatPer100Grams() {
-        return 2.2;
-    }
-
-    
-    public double getCarbPer100Grams() {
-        return 29;
-    }
-
-    
-    public double getSugarPer100Grams() {
-        return 1.2;
-    }
-
-    
-    public double getProteinPer100Grams() {
-        return 7.4;
-    }
-    
-    
-    public double getSaltPer100Grams() {
-        return 0.58;
-    }
-
-    
-    public double getCalsPer100Grams() {
-        return 189;
-    }
-
 }

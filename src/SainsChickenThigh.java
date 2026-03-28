@@ -1,42 +1,21 @@
 public class SainsChickenThigh extends Food {
 
+    protected void initNutrition() {
+        this.fatPer100 = 7.6;
+        this.satFatPer100 = 2.1;
+        this.carbPer100 = 0;
+        this.sugarPer100 = 0;
+        this.proteinPer100 = 24.8;
+        this.saltPer100 = 0.75;
+        this.calsPer100 = 168;
+    }
+
     public SainsChickenThigh(double mass, double price) {
         super(mass, price);
+        initNutrition();
     }
 
-    
-    public double getFatPer100Grams() {
-        return 7.6;
+    public SainsChickenThigh(double mass) {
+        this(mass, 0);
     }
-
-    
-    public double getSatFatPer100Grams() {
-        return 2.1;
-    }
-
-    
-    public double getCarbPer100Grams() {
-        return 0;
-    }
-
-    
-    public double getSugarPer100Grams() {
-        return 0;
-    }
-
-    
-    public double getProteinPer100Grams() {
-        return 24.8;
-    }
-    
-    
-    public double getSaltPer100Grams() {
-        return 0.75;
-    }
-
-    
-    public double getCalsPer100Grams() {
-        return 168;
-    }
-
 }
