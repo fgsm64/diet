@@ -1,43 +1,21 @@
 public class SainsTomatoSauce extends Food {
 
+    protected void initNutrition() {
+        this.fatPer100 = 0;
+        this.satFatPer100 = 0;
+        this.carbPer100 = 9.3;
+        this.sugarPer100 = 6.7;
+        this.proteinPer100 = 1.6;
+        this.saltPer100 = 0.61;
+        this.calsPer100 = 49;
+    }
+
     public SainsTomatoSauce(double mass, double price) {
         super(mass, price);
+        initNutrition();
     }
 
-    
-    public double getFatPer100Grams() {
-        return 0;
+    public SainsTomatoSauce(double mass) {
+        this(mass, 0);
     }
-
-    
-    public double getSatFatPer100Grams() {
-        return 0;
-    }
-
-    
-    public double getCarbPer100Grams() {
-        return 6.4;
-    }
-
-    
-    public double getSugarPer100Grams() {
-        return 5.1;
-    }
-
-    
-    public double getProteinPer100Grams() {
-        return 1.1;
-    }
-    
-    
-    public double getSaltPer100Grams() {
-        return 0.65;
-    }
-
-    
-    public double getCalsPer100Grams() {
-        return 36;
-    }
-
 }
-
