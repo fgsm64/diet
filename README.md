@@ -18,20 +18,21 @@ Foods:
   - SainsPeanutButter, 50g, £0.0
 
 # Bulk:  
-Fat: 58g  
-SatFat: 13g  
-Carb: 216g  
-Sugar: 28g  
-Protein: 163g  
-Salt: 6.14g; Sodium: 2.46g  
-Cals: 2044kcal  
+Fat: 65g  
+SatFat: 15g  
+Carb: 230g  
+Sugar: 35g  
+Protein: 191g  
+Salt: 7.29g; Sodium: 2.91g  
+Cals: 2277kcal  
 Price: £0.00  
 F: 13%
-C: 49%
-P: 37%
+C: 47%
+P: 39%
 
 Foods:
-  - SainsChickenBreast, 320g, £0.0
+  - SainsChickenBreast, 400g, £0.0
+  - CurrySauce, 167g, £0.0
   - TescoSpinnyRic, 300g, £0.0
   - SainsTomatoSauce, 250g, £0.0
   - TescoSourdough, 200g, £0.0

@@ -66,7 +66,8 @@ public class Diet {
     
     public static void main(String[] args) {
         List<Food> listOfFoodsBulk = new ArrayList<Food>();
-        listOfFoodsBulk.add(new SainsChickenBreast(320));
+        listOfFoodsBulk.add(new SainsChickenBreast(400));
+        listOfFoodsBulk.add(new CurrySauce(167));
         listOfFoodsBulk.add(new TescoSpinnyRic(300));
         listOfFoodsBulk.add(new SainsTomatoSauce(250));
         listOfFoodsBulk.add(new TescoSourdough(200));
