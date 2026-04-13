@@ -68,9 +68,9 @@ public class Diet {
     }
 
     private static void writeListOfDietsToReadme() {
-        ReadmeWriter.clearReadme();
-        for (Diet diet : Diet.listOfDiets) {
-            ReadmeWriter.writeDietToReadme(diet);
+        ReadmeWriter writer = new ReadmeWriter();
+        for (Diet diet : Diet.listOfDiets) { // TODO: MOVE THIS LOOP INSIDE READMEWRITER, ALLOW PASSING LIST OR SINGLE DIET
+            writer.writeDietToReadme(diet);
         }
     }
 

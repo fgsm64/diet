@@ -5,32 +5,41 @@ import java.io.IOException;
 
 public class ReadmeWriter {
 
-    public static void writeDietToReadme(Diet diet) {
-        if (diet == null) {
-            throw new IllegalArgumentException("Diet object cannot be null.");
-        }
+    private File readmeFile;
 
+    public ReadmeWriter() {
+        setReadmeFile();
+        clearReadme();
+    }
+
+    public void writeDietToReadme(Diet diet) {
         try {
-            File readme = getReadmeFile();
-            try (BufferedWriter writer = new BufferedWriter(new FileWriter(readme, true))) {
-                writer.write(diet.toString());
-                writer.newLine();
-            }
+            BufferedWriter writer = new BufferedWriter(new FileWriter(readmeFile, true));
+            writer.write(diet.toString());
+            writer.newLine();
+            writer.close();
         } catch (IOException e) {
             throw new RuntimeException("Failed to write diet to README", e);
         }
     }
 
-    private static File getReadmeFile() {
-        File rootDir = new File(System.getProperty("user.dir"));
-        return new File(rootDir, "README.md");
+    private void setReadmeFile() {
+        try {
+            File rootDir = new File(System.getProperty("user.dir"));
+            readmeFile = new File(rootDir, "README.md");
+            if (!readmeFile.exists()) {
+                readmeFile.createNewFile();
+            }
+        } catch (IOException e) {
+            throw new RuntimeException("Failed to create README file", e);
+        }
     }
 
-    public static void clearReadme() {
+    private void clearReadme() {
         try {
-            File readme = getReadmeFile();
-            try (BufferedWriter writer = new BufferedWriter(new FileWriter(readme, false))) {
-            }
+            BufferedWriter writer = new BufferedWriter(new FileWriter(readmeFile, false));
+            writer.write("");
+            writer.close();
         } catch (IOException e) {
             throw new RuntimeException("Failed to clear README", e);
         }
