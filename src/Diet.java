@@ -15,6 +15,8 @@ public class Diet {
     private double price = 0;
     private List<Food> listOfFoods;
 
+    private static List<Diet> listOfDiets = new ArrayList<Diet>();
+
     public Diet(String name, List<Food> listOfFoods) {
         this.name = name;
         this.listOfFoods = listOfFoods;
@@ -28,6 +30,7 @@ public class Diet {
             this.cals += food.getCals();
             this.price += food.getPrice();
         }
+        listOfDiets.add(this);
     }
 
     private String getMacroRatios() {
@@ -63,7 +66,14 @@ public class Diet {
 
         return sb.toString();
     }
-    
+
+    private static void writeListOfDietsToReadme() {
+        ReadmeWriter.clearReadme();
+        for (Diet diet : Diet.listOfDiets) {
+            ReadmeWriter.writeDietToReadme(diet);
+        }
+    }
+
     public static void main(String[] args) {
         List<Food> listOfFoodsBulk = new ArrayList<Food>();
         listOfFoodsBulk.add(new SainsChickenBreast(400));
@@ -80,13 +90,13 @@ public class Diet {
         listOfFoodsCut.add(new SainsTomatoSauce(250));
         listOfFoodsCut.add(new SainsPeanutButter(50));
         Diet dietCut = new Diet("Cut", listOfFoodsCut);
-        
+
         List<Food> listOfFoodsCheat = new ArrayList<Food>();
         listOfFoodsCheat.add(new TescoSpinnyRic(300));
         listOfFoodsCheat.add(new SainsTomatoSauce(125));
         listOfFoodsCheat.add(new DQP());
         listOfFoodsCheat.add(new DQP());
-        Diet dietCheat = new Diet("Cheat", listOfFoodsCheat);
+        //Diet dietCheat = new Diet("Cheat", listOfFoodsCheat);
         
         List<Food> listOfFoodsTest = new ArrayList<Food>();
         listOfFoodsTest.add(new TescoSpinnyRic(300));
@@ -94,20 +104,14 @@ public class Diet {
         listOfFoodsTest.add(new SainsTomatoSauce(250));
         listOfFoodsTest.add(new TescoSourdough(200));
         listOfFoodsTest.add(new CremeEgg());
-        Diet dietTest = new Diet("Test", listOfFoodsTest);
+        //Diet dietTest = new Diet("Test", listOfFoodsTest);
 
 
         System.out.println(dietBulk);
-        //System.out.println(dietTest);
         System.out.println(dietCut);
+        //System.out.println(dietTest);
         //System.out.println(dietCheat);
 
-        try {
-            ReadmeWriter.clearReadme();
-            ReadmeWriter.writeDietToReadme(dietCut);
-            ReadmeWriter.writeDietToReadme(dietBulk);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        writeListOfDietsToReadme();
     }
 }
