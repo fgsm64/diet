@@ -1,23 +1,21 @@
 # Bulk:  
-Fat: 65g  
-SatFat: 15g  
-Carb: 230g  
-Sugar: 35g  
-Protein: 191g  
-Salt: 7.29g; Sodium: 2.91g  
-Cals: 2277kcal  
+Fat: 80g  
+SatFat: 22g  
+Carb: 199g  
+Sugar: 20g  
+Protein: 165g  
+Salt: 5.56g; Sodium: 2.22g  
+Cals: 2172kcal  
 Price: £0.00  
-F: 13%
-C: 47%
-P: 39%
+F: 18%
+C: 44%
+P: 37%
 
 Foods:
-  - SainsChickenBreast, 400g, £0.0
+  - SainsChickenBreast, 320g, £0.0
   - CurrySauce, 167g, £0.0
-  - TescoSpinnyRic, 300g, £0.0
-  - SainsTomatoSauce, 250g, £0.0
-  - TescoSourdough, 200g, £0.0
-  - SainsPeanutButter, 75g, £0.0
+  - TescoSpinnyRic, 600g, £0.0
+  - SainsPeanutButter, 85g, £0.0
 
 # Cut:  
 Fat: 46g  

@@ -76,12 +76,10 @@ public class Diet {
 
     public static void main(String[] args) {
         List<Food> listOfFoodsBulk = new ArrayList<Food>();
-        listOfFoodsBulk.add(new SainsChickenBreast(400));
+        listOfFoodsBulk.add(new SainsChickenBreast(320));
         listOfFoodsBulk.add(new CurrySauce(167));
-        listOfFoodsBulk.add(new TescoSpinnyRic(300));
-        listOfFoodsBulk.add(new SainsTomatoSauce(250));
-        listOfFoodsBulk.add(new TescoSourdough(200));
-        listOfFoodsBulk.add(new SainsPeanutButter(75));
+        listOfFoodsBulk.add(new TescoSpinnyRic(600));
+        listOfFoodsBulk.add(new SainsPeanutButter(85));
         Diet dietBulk = new Diet("Bulk", listOfFoodsBulk);
 
         List<Food> listOfFoodsCut = new ArrayList<Food>();
@@ -99,11 +97,10 @@ public class Diet {
         //Diet dietCheat = new Diet("Cheat", listOfFoodsCheat);
         
         List<Food> listOfFoodsTest = new ArrayList<Food>();
-        listOfFoodsTest.add(new TescoSpinnyRic(300));
+        listOfFoodsTest.add(new TescoSpinnyRic(600));
         listOfFoodsTest.add(new SainsChickenBreast(320));
-        listOfFoodsTest.add(new SainsTomatoSauce(250));
-        listOfFoodsTest.add(new TescoSourdough(200));
-        listOfFoodsTest.add(new CremeEgg());
+        listOfFoodsTest.add(new CurrySauce(167));
+        listOfFoodsTest.add(new SainsPeanutButter(85));
         //Diet dietTest = new Diet("Test", listOfFoodsTest);
 
 
