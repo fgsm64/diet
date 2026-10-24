@@ -83,10 +83,10 @@ public class Diet {
         Diet dietBulk = new Diet("Bulk", listOfFoodsBulk);
 
         List<Food> listOfFoodsCut = new ArrayList<Food>();
-        listOfFoodsCut.add(new SainsChickenBreast(400));
-        listOfFoodsCut.add(new TescoSpinnyRic(300));
-        listOfFoodsCut.add(new SainsTomatoSauce(250));
-        listOfFoodsCut.add(new SainsPeanutButter(50));
+        listOfFoodsCut.add(new SainsChickenBreast(320));
+        listOfFoodsCut.add(new CurrySauce(167));
+        listOfFoodsCut.add(new PilauRice(500));
+        listOfFoodsCut.add(new SainsPeanutButter(85));
         Diet dietCut = new Diet("Cut", listOfFoodsCut);
 
         List<Food> listOfFoodsCheat = new ArrayList<Food>();
@@ -100,7 +100,7 @@ public class Diet {
         listOfFoodsTest.add(new TescoSpinnyRic(600));
         listOfFoodsTest.add(new SainsChickenBreast(320));
         listOfFoodsTest.add(new CurrySauce(167));
-        listOfFoodsTest.add(new SainsPeanutButter(85));
+        //listOfFoodsTest.add(new SainsPeanutButter(85));
         //Diet dietTest = new Diet("Test", listOfFoodsTest);
 
 
